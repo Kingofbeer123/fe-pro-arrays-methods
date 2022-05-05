@@ -68,9 +68,18 @@ const minPriceReducer = () => {
   return goods.reduce((accumulator, good) => Math.min(accumulator, good.price), goods[0].price);
 };
 
-const maxPriceReducer = () => {};
+const maxPriceReducer = () => {
+  return goods.reduce((accumulator, good) => Math.min(accumulator, good.price), goods[0].price);
+};
 
-const toMaxSorter = () => {};
+const toMaxSorter = () => {
+  return goods.sort((firstItem, secondItem) => {
+    if (firstItem < secondItem) 
+    return 1;
+    if (firstItem > secondItem) 
+    return -1;
+  })
+};
 const toMinSorter = () => {};
 
 export const filters = {
