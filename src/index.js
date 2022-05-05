@@ -7,7 +7,7 @@ import { goods } from './goods.js';
 const brandFilter = (brand) => {
    goods.filter(item => item.brand === brand)
 }
-
+ 
 /**
  * @param {string} color
  * @returns {*}
