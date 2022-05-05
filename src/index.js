@@ -5,7 +5,7 @@ import { goods } from './goods.js';
  * @returns {*}
  */
 const brandFilter = (brand) => {
-   goods.filter(item => item.brand === brand)
+   return goods.filter(item => item.brand === brand);
 }
  
 /**
@@ -13,7 +13,7 @@ const brandFilter = (brand) => {
  * @returns {*}
  */
 const colorFilter = (color) => {
-  goods.filter(item => item.color === color)
+  return goods.filter(item => item.color === color)
 };
 
 /**
@@ -21,7 +21,7 @@ const colorFilter = (color) => {
  * @returns {*}
  */
 const modelFilter = (model) => {
-  goods.filter(item => item.model === model)
+  return goods.filter(item => item.model === model)
 };
 
 /**
@@ -29,7 +29,7 @@ const modelFilter = (model) => {
  * @returns {*}
  */
 const memoryFilter = (memory) => {
-  goods.filter(item => item.memory === memory)
+  return goods.filter(item => item.memory === memory)
 };
 
 /**
@@ -37,7 +37,7 @@ const memoryFilter = (memory) => {
  * @returns {*}
  */
 const priceFilter = (price) => {
-  goods.filter(item => item.price === price)
+  return goods.filter(item => item.price === price)
 };
 
 /**
@@ -45,7 +45,7 @@ const priceFilter = (price) => {
  * @returns {*}
  */
 const countryFilter = (country) => {
-  goods.filter(item => item.country === country)
+  return goods.filter(item => item.country === country)
 };
 
 /**
@@ -53,7 +53,7 @@ const countryFilter = (country) => {
  * @returns {*}
  */
 const osFilter = (os) => {
-  goods.filter(item => item.os === os)
+  return goods.filter(item => item.os === os)
 };
 
 /**
